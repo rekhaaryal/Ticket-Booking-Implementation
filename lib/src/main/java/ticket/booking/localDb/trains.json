@@ -1,0 +1,42 @@
+[
+  {
+    "train_id": "baca",
+    "train_no": 1356,
+    "seats": [
+      [0,0,0,0,0,0],
+      [0,0,0,0,0,0],
+      [0,0,0,0,0,0],
+      [0,0,0,0,0,0]
+    ],
+    "station_times": {
+      "kalanki": "8:00:00",
+      "bagbazzar": "8:00:00",
+      "balaju": "8:00:00"
+    },
+    "stations": [
+      "kalanki",
+      "bagbazzar",
+      "balaju"
+    ]
+  },
+  {
+    "train_id": "bacs",
+    "train_no": 1359,
+    "seats": [
+      [0,0,0,0,0,0],
+      [0,0,0,0,0,0],
+      [0,0,0,0,0,0],
+      [0,0,0,0,0,0]
+    ],
+    "station_times": {
+      "kalanki": "8:00:00",
+      "bagbazzar": "8:00:00",
+      "balaju": "8:00:00"
+    },
+    "stations": [
+      "kalanki",
+      "bagbazzar",
+      "balaju"
+    ]
+  }
+]

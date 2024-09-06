@@ -1,0 +1,32 @@
+[
+  {
+    "user_id": "1356",
+    "name": "Rekha aryal",
+    "hash-password": "Red1356",
+    "tickets_booked": [
+      {
+
+        "source": "kathmandu",
+        "destination":"pokhara",
+        "dateOfTravel": "2024-9-8 T1 8:30am ",
+        "train": {
+          "trainId": "baca",
+          "trainNo": "1356",
+          "seats": [
+            [0,0,0,0,0,0],
+            [0,0,0,0,0,0],
+            [0,0,0,0,0,0],
+            [0,0,0,0,0,0]
+          ],
+          "station": {
+            "kalanki": "5:00;00",
+            "bagbazzar": "5:00:00",
+            "balaju": "5:00:00"
+          }
+
+        }
+      }
+    ]
+
+}
+]
