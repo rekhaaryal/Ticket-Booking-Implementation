@@ -21,7 +21,7 @@ public class UserBookingService
 
 
 
-    private static final String USER_PATH = "../localDb/Users.json";
+    private static final String USER_PATH = "lib/src/main/java/ticket/booking/localDb/Users.json";
 
     public UserBookingService(User user1) throws IOException
     {
