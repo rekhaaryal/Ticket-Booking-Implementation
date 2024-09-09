@@ -25,6 +25,7 @@ dependencies {
     // This dependency is used internally, and not exposed to consumers on their own compile classpath.
     implementation libs.guava
     implementation 'com.fasterxml.jackson.core:jackson-databind:2.12.6'
+    implementation 'org.mindrot:jbcrypt:0.4'
 
 }
 
