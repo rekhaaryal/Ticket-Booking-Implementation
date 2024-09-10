@@ -2,6 +2,7 @@ package ticket.booking.services;
 
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import ticket.booking.entities.Ticket;
 import ticket.booking.entities.User;
 import ticket.booking.util.UserServiceUtil;
 
@@ -53,4 +54,28 @@ public class UserBookingService
     }
     // json --> object(user) = deserialize
     // object(User) --> json = serialize
+
+    public void fetchBooking(){
+        user.printTicket();
+    }
+
+    public Boolean cancleBooking(String ticketId){
+        Optional<Ticket> ticketToCancel = user.getTicketsBooked().stream()
+                .filter(ticket -> ticket.getTicketId().equals(ticketId))
+                .findFirst();
+
+        if (ticketToCancel.isPresent()) {
+            user.getTicketsBooked().remove(ticketToCancel.get());
+            try {
+                saveUserListToFile();
+                return Boolean.TRUE;
+            } catch (IOException e) {
+                return Boolean.FALSE;
+            }
+        } else {
+            return Boolean.FALSE;
+        }
+
+
+    }
 }
