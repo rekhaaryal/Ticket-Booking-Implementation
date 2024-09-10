@@ -25,11 +25,19 @@ public class UserBookingService
 
     private static final String USER_PATH = "lib/src/main/java/ticket/booking/localDb/Users.json";
 
-    public UserBookingService(User user1) throws IOException
-    {
-        this.user = user1;
+    public UserBookingService(User user1) throws IOException {
+        this.user= user1;
+        loadUsers();
+
+    }
+
+    public UserBookingService() throws IOException {
+        loadUsers();
+    }
+    public List<User>loadUsers() throws IOException{
+
         File users = new File(USER_PATH);
-        userList = objectMapper.readValue(users, new TypeReference<List<User>>() {});
+        return objectMapper.readValue(users, new TypeReference<List<User>>() {});
     }
 
     public Boolean loginUser(){
@@ -55,7 +63,7 @@ public class UserBookingService
     // json --> object(user) = deserialize
     // object(User) --> json = serialize
 
-    public void fetchBooking(){
+    public void fetchBookings(){
         user.printTicket();
     }
 
